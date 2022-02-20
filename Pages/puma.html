@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/index.css">
+    <title>Puma</title>
+</head>
+<body>
+    <div id="body">
+        <div id="menu">
+            <a href="produits.html">
+                <input type="button" class="MenuElement" value="Produits">
+            </a>
+            <a href="voirCommande.html">
+                <input type="button" class="MenuElement" value="Voir ma commande">
+            </a>
+            <a href="SignUpLogIn.html">
+                <input type="button" class="MenuElement" value="Sign up/Log in">
+            </a>
+        </div>
+    </div>
+    <div id="MainPageMarques">
+        <div class="t_shirt_order">
+            <div class="t_shirt_container">
+                <img src="https://www.babyshop.com/images/925569/card_xlarge.jpg" alt="image-t-shirt">
+                <div class="submit">
+                    <h2>Inserer la quantite ci-dessous</h2>
+                    <input type="number" name="Quantity" id="quantity" value="">
+                </div>
+                <button id="soumettre">
+                    <p>+</p>
+                </button>    
+            </div>
+        </div>
+    </div>
+    <script>
+        let quantity= document.getElementById("quantity");
+        let plusButton= document.getElementById("soumettre");
+
+        plusButton.onclick= function(){
+            quantity.value=null;
+        }
+    </script>
+</body>
+</html>

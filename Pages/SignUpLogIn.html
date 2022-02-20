@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/index.css">
+    <title>Sign up/Log in</title>
+</head>
+
+<body>
+    <div id="body">
+        <div id="menu">
+            <a href="produits.html">
+                <input type="button" class="MenuElement" value="Produits">
+            </a>
+            <a href="voirCommande.html">
+                <input type="button" class="MenuElement" value="Voir ma commande">
+            </a>
+            <a href="SignUpLogIn.html">
+                <input type="button" class="MenuElement" value="Sign up/Log in">
+            </a>
+        </div>
+        <div id="MainPageRegistering">
+            <button id="buttonLogIn">
+                <p>Log In</p>
+            </button>
+            <button id="buttonSignUp">
+                <p>
+                    Sign up
+                </p>
+            </button>
+
+            <div id="LogInHTML">
+                <p>Email</p>
+                <input type="email" name="logEmail" id="logInEmail" value="">
+                <p>Password</p>
+                <input type="password" name="logPassword" id="logInPassword" value="">
+                <button type="submit" name="submit" id="logInSubmit">
+                    <p>Log In</p>
+                </button>
+            </div>
+            <div id="SignUpHTML">
+                <form action="signup.php" method="POST">
+                    <p>Email</p>
+                    <input type="text" name="SignEmail" id="signInEmail" value="">
+                        <p>Password</p>
+                    <input type="password" name="SignPassword" id="signInPassword" value="">
+                        <p>Age</p>
+                    <input type="number" name="SignAge" id="signInAge" value="">
+                        <p>Prenom</p>
+                    <input type="text" name="SignPrenom" id="signInPrenom" value="">
+                        <p>Nom</p>
+                    <input type="text" name="SignNom" id="signInNom" value="">
+                        <p>Numero Adresse</p>
+                    <input type="number" name="SignNoAdresse" id="signInNoAdresse" value="">
+                        <p>Nom de rue</p>
+                    <input type="text" name="SignNomRue" id="signInNomRue" value="">
+                        <p>Telephone</p>
+                    <input type="tel" name="SignTel" id="signInTel" value="">
+                    <button type="submit" name="submit" id="SignInSubmit">
+                        <p>Sign up</p>
+                    </button>
+                </form>
+            </div>
+            <div id="signInConfirmation">
+                Vous avez creer un compte avec succes
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
